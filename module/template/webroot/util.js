@@ -1,4 +1,4 @@
-import * as ksu from "./ksu.js";
+// import * as ksu from "./ksu.js";
 class aaptUtil {
     //模块目录
     static webDir = "/data/adb/modules/tricky_store/webroot";

@@ -1,4 +1,4 @@
-import * as ksu from "./ksu.js";
+// import * as ksu from "./ksu.js";
 import util from "./util.js";
 //环境检测
 if (window.ksu == null) {

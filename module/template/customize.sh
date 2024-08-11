@@ -69,6 +69,15 @@ extract "$ZIPFILE" 'service.apk'     "$MODPATH"
 extract "$ZIPFILE" 'sepolicy.rule'   "$MODPATH"
 extract "$ZIPFILE" 'daemon'          "$MODPATH"
 chmod 755 "$MODPATH/daemon"
+mkdir "$MODPATH/webroot"
+mkdir "$MODPATH/webroot/lib"
+mkdir "$MODPATH/webroot/shell"
+extract "$ZIPFILE" 'webroot/main.js' "$MODPATH"
+extract "$ZIPFILE" 'webroot/util.js' "$MODPATH"
+extract "$ZIPFILE" 'webroot/index.html' "$MODPATH"
+extract "$ZIPFILE" 'webroot/lib/aapt' "$MODPATH"
+extract "$ZIPFILE" 'webroot/shell/init.sh' "$MODPATH"
+
 
 mkdir "$MODPATH/zygisk"
 
